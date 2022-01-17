@@ -1,0 +1,156 @@
+html {
+  background-color: #5F939A;
+}
+
+.title {
+  text-align: center;
+  font-size: 45px;
+  font-weight: bolder;
+  /* font-family: Helvetica, sans-serif; */
+  font-family: 'Oswald', sans-serif;
+  background-color: #368B85;
+  color:white;
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding: 20px 0;
+}
+
+button:focus {
+  outline: none;
+}
+
+.days {
+  font-size: 25px;
+  width: 100%;
+  border: none;
+  display: block;
+  height: 70px;
+  color: black;
+  border-bottom: 1px solid black;
+  padding: 10px 25px;
+  background-color: #F1E9E5;
+  cursor: pointer;
+  float: left;
+  --color: #a972cb;
+  --hover: #cb72aa;
+}
+
+.days:hover,
+.days:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+button {
+  color: var(--color);
+  transition: 0.75s;
+}
+
+#days {
+  height: 600px;
+  position: fixed;
+  font-family: 'Josefin Sans', sans-serif;
+  -webkit-overflow-scrolling: touch;
+}
+
+.sub {
+  font-size: 18px;
+  font-family: 'Josefin Sans', sans-serif;
+  border: none;
+  display: block;
+  height: fit-content;
+  color: black;
+  position: relative;
+  padding: 15px 32px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.day {
+  background-color: #14FFEC;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Dongle', sans-serif;
+  height: 20px;
+  color: black;
+  border-radius: 5in;
+  height: 70px;
+}
+
+#Imagev {
+  float: right;
+  height: 600px;
+  width: 900px;
+}
+
+#pannel {
+  float: right;
+  background-color: #F1E9E5;
+  margin-top: 21px;
+  border-radius: 4rem;
+  padding-bottom: 75px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.head {
+  background-color: #BAFFB4;
+  margin-right: 50px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #548CFF;
+  height: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+  #days {
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #days {
+    display: inline;
+    width: 100%;
+    font-size: 7px;
+    position: relative;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .days {
+    font-size: 5px;
+    width: 100%;
+    height: 10px;
+    /* background-color: black; */
+    color: blanchedalmond;
+  }
+
+  #pannel {
+    display: inline-block;
+    display: inline;
+    width: 100%;
+    font-size: 10px;
+    position: relative;
+  }
+
+  .day {
+    font-size: 20px;
+    /* background-color:black; */
+    height: 30px;
+    width: 100%;
+  }
+
+  #Imagev {
+    float: right;
+    height: 100%;
+    width: 100%;
+  }
+
+  .head {
+    background-color: black;
+  }
+}

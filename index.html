@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="timetable.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="timtable.js"></script>
+<html lang="en">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle&family=Josefin+Sans&family=Oswald&display=swap" rel="stylesheet">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+  <link rel="icon" href="timetable.jpg" type="image" sizes="16x16">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Table</title>
+</head>
+<header>
+</header>
+
+<body>
+  <h1 class="title">Time Table</h1>
+
+  <div class="col-sm-12">
+    <div class="head">
+      <div class="col-sm-4" id="days">
+        <h2 class="day">Days</h2>
+        <button id="Monday" onclick="day(id)" class="days">Monday</button>
+        <button id="Tuesday" onclick="day(id)" class="days">Tuesday</button>
+        <button id="Wednesday" onclick="day(id)" class="days">Wednesday</button>
+        <button id="Thursday" onclick="day(id)" class="days">Thursday</button>
+        <button id="Friday" onclick="day(id)" class="days">Friday</button>
+        <button id="Saturday" onclick="day(id)" class="days">Saturday</button>
+      </div>
+    </div>
+
+    <div class="col-sm-8" id="pannel">
+
+      <div id="sunday">
+        <script>
+          var d = new Date(2022,1,16);
+          var n = d.getDay();
+          var x = document.createElement("IMG");
+          if (n == 0) {
+            x.setAttribute("src", "https://www.desicomments.com/dc3/08/291515/291515.jpg");
+
+            x.setAttribute("id", "Imagev")
+            x.setAttribute("alt", "The Pulpit Rock");
+            document.body.appendChild(x);
+          } else {
+            x.remove();
+          }
+        </script>
+      </div>
+
+
+        <div class="monday" id="monday" style="display: none;">
+          <div class="col-sm-12" style="border-bottom:black solid 1px;">
+
+            <h2 class="day"> Monday Lectures </h2>
+          </div>
+
+          <script>
+            var d = new Date();
+            var n = d.getDay();
+
+            if (n == 1) {
+              var x = document.getElementById("monday");
+              x.style.display = "block";
+              Imagev.remove();
+            }
+          </script>
+
+
+          <div class="col-sm-11 " style="border-bottom:black solid 1px;">
+            <div class="col-sm-3">
+              <h4 style="text-align: center; ">8:30 to 9:45</h4>
+            </div>
+            <div class="col-sm-8" style="border-left: black solid 2px; ">
+              <button class="sub" style="width: 100%;" onclick=" window.open('','_blank')"> Cloud Computing </button>
+            </div>
+          </div>
+
+          <div class="col-sm-11" style="border-bottom:black solid 1px;">
+            <div class="col-sm-3 " style="border-left:black">
+              <h4 style="text-align: center;">10:15 to 11:30</h4>
+            </div>
+            <div class="col-sm-8" style="border-left: black solid 2px; ">
+              <button class="sub" style="width: 100%;" onclick=" window.open('','_blank')">No SQL Databases</button>
+            </div>
+          </div>
+
+          <div class="col-sm-11" style="border-bottom:black solid 1px;">
+            <div class="col-sm-3">
+              <h4 style="text-align: center; border-right: black;">12:00 to 1:15</h4>
+            </div>
+            <div class="col-sm-8" style="border-left: black solid 2px;">
+              <button class="sub" style="width: 100%;" onclick=" window.open('')">Einstein's Physics </button>
+            </div>
+          </div>
+          <div class="col-sm-12" style="border-bottom:black solid 1px;">
+
+            <h2 class="day">Monday Labs </h2>
+          </div>
+          <div class="col-sm-11" style="border-bottom:black solid 1px;">
+            <div class="col-sm-3">
+              <h4 style="text-align: center;">2:00 to 4:00</h4>
+            </div>
+            <div class="col-sm-8" style="border-left: black solid 2px;">
+              <button class="sub" style="width: 100%;" onclick=" window.open('','_blank')">Not Decided</button>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="tuesday" id="tuesday" style="display: none;">
+
+          <div class="col-sm-12" style="border-bottom:black solid 1px;">
+
+            <h2 class="day"> Tuesday Lectures </h2>
+          </div>
+
+          <script>
+            var d = new Date();
+            var n = d.getDay();
+
+            if (n == 2) {
+              var x = document.getElementById("tuesday");
+              x.style.display = "block";
+              Imagev.remove();
+            }
+          </script>
+
+
+          <div class="col-sm-11" style="border-bottom:black solid 1px;">
+            <div class="col-sm-3">
+              <h4 style="text-align: center;">8:30 to 9:45</h4>
+            </div>
+            <div class="col-sm-8" style="border-left: black solid 2px;">
+              <button class="sub" style="width: 100%;" onclick=" window.open('','_blank')">Software Engineering </button>
+
+
+            </div>
+          </div>
+          <div class="col-sm-11" style="border-bottom:black solid 1px;">
+            <div class="col-sm-3">
+              <h4 style="text-align: center;">10:15 to 11:30</h4>
+            </div>
+            <div class="col-sm-8" style="border-left: black solid 2px;">
+              <button class="sub" style="width: 100%;" onclick=" window.open('','_blank')">Human Development</button>
+
+            </div>
+          </div>
+
+          <div class="col-sm-11" style="border-bottom:black solid 1px;">
+            <div class="col-sm-3">
+              <h4 style="text-align: center;">12:00 to 1:15 </h4>
+            </div>
+            <div class="col-sm-8" style="border-left: black solid 2px;">
+              <button class="sub" style="width: 100%;" onclick=" window.open('','_blank')">Operating Systems </button>
+
+            </div>
+          </div>
+          <div class="col-sm-12" style="border-bottom:black solid 1px;">
+
+            <h2 class="day">Tuesday Labs</h2>
+          </div>
+          <div class="col-sm-11" style="border-bottom:black solid 1px;">
+
+
+            <div class="col-sm-3">
+              <h4 style="text-align: center;">2:00 to 4:00</h4>
+            </div>
+            <div class="col-sm-8" style="border-left: black solid 2px;">
+              <button class="sub" style="width: 100%;" onclick=" window.open('','_blank')">Not Decided</button>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="wednesday" id="wednesday" style="display: none;">
+
+          <div class="col-sm-12" style="border-bottom:black solid 1px;">
+
+            <h2 class="day">Wednesday Lectures </h2>
+          </div>
+          <script>
+            var d = new Date();
+            var n = d.getDay();
+
+            if (n == 3) {
+              var x = document.getElementById("wednesday");
+              x.style.display = "block";
+              Imagev.remove();
+            }
+          </script>
+
+
+          <div class="col-sm-11" style="border-bottom:black solid 1px;">
+            <div class="col-sm-3">
+              <h4 style="text-align: center;">8:30 to 9:45</h4>
+            </div>
+            <div class="col-sm-8" style="border-left: black solid 2px;">
+              <button class="sub" style="width: 100%;" onclick=" window.open('','_blank')">Introduction to Robotics</button>
+            </div>
+          </div>
+          <div class="col-sm-11" style="border-bottom:black solid 1px;">
+            <div class="col-sm-3">
+              <h4 style="text-align: center;">10:15 to 11:30</h4>
+            </div>
+            <div class="col-sm-8" style="border-left: black solid 2px;">
+              <button class="sub" style="width: 100%;" onclick=" window.open('','_blank')">Cloud Computing</button>
+            </div>
+          </div>
+
+          <div class="col-sm-11" style="border-bottom:black solid 1px;">
+            <div class="col-sm-3">
+              <h4 style="text-align: center;">12:00 to 1:15</h4>
+            </div>
+            <div class="col-sm-8" style="border-left: black solid 2px;">
+              <button class="sub" style="width: 100%;" onclick=" window.open('','_blank')">FREE </button>
+
+            </div>
+          </div>
+
+          <div class="col-sm-12" style="border-bottom:black solid 1px;">
+
+            <h2 class="day">Wednesday Labs </h2>
+          </div>
+          <div class="col-sm-11" style="border-bottom:black solid 1px;">
+
+            <div class="col-sm-3">
+              <h4 style="text-align: center;">2:00 to 4:00</h4>
+            </div>
+            <div class="col-sm-8" style="border-left: black solid 2px;">
+              <button class="sub" style="width: 100%;" onclick=" window.open('','_blank')">Not Decided</button>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="thursday" id="thursday" style="display: none;">
+          <div class="col-sm-12" style="border-bottom:black solid 1px;">
+
+            <h2 class="day"> Thursday Lectures </h2>
+          </div>
+
+          <script>
+            var d = new Date();
+            var n = d.getDay();
+
+            if (n == 4) {
+              var x = document.getElementById("thursday");
+              x.style.display = "block";
+              Imagev.remove();
+            }
+          </script>
+
+
+          <div class="col-sm-11" style="border-bottom:black solid 1px;">
+            <div class="col-sm-3">
+              <h4 style="text-align: center;">8:30 to 9:30</h4>
+            </div>
+            <div class="col-sm-8" style="border-left: black solid 2px;">
+              <button class="sub" style="width: 100%;" onclick=" window.open('','_blank')">Einstein's Physics </button>
+            </div>
+          </div>
+          <div class="col-sm-11" style="border-bottom:black solid 1px;">
+            <div class="col-sm-3">
+              <h4 style="text-align: center;">10:30 to 11:30</h4>
+            </div>
+            <div class="col-sm-8" style="border-left: black solid 2px;">
+
+              <button class="sub" style="width: 100%;" onclick=" window.open('','_blank')">Operating Systems </button>
+            </div>
+          </div>
+
+          <div class="col-sm-11" style="border-bottom:black solid 1px;">
+            <div class="col-sm-3">
+              <h4 style="text-align: center;">12:00 to 1:15</h4>
+            </div>
+            <div class="col-sm-8" style="border-left: black solid 2px;">
+              <button class="sub" style="width: 100%;" onclick=" window.open('','_blank')">Software Engineering</button>
+
+            </div>
+          </div>
+          <div class="col-sm-12" style="border-bottom:black solid 1px;">
+
+            <h2 class="day"> Thursday Labs </h2>
+          </div>
+          <div class="col-sm-11" style="border-bottom:black solid 1px;">
+
+            <div class="col-sm-3">
+              <h4 style="text-align: center;">2:00 to 4:00</h4>
+            </div>
+            <div class="col-sm-8" style="border-left: black solid 2px;">
+              <button class="sub" style="width: 100%;" onclick=" window.open('','_blank')">Not Decided</button>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="friday" id="friday" style="display: none;">
+
+          <div class="col-sm-12" style="border-bottom:black solid 1px;">
+
+            <h2 class="day"> Friday Lectures </h2>
+          </div>
+
+          <script>
+            var d = new Date();
+            var n = d.getDay();
+
+            if (n == 5) {
+              var x = document.getElementById("friday");
+              x.style.display = "block";
+              Imagev.remove();
+            }
+          </script>
+
+
+          <div class="col-sm-11" style="border-bottom:black solid 1px;">
+            <div class="col-sm-3">
+              <h4 style="text-align: center;">8:30 to 9:45</h4>
+            </div>
+            <div class="col-sm-8" style="border-left: black solid 2px;">
+              <button class="sub" style="width: 100%;" onclick=" window.open('','_blank')">No SQL Databases</button>
+            </div>
+          </div>
+          <div class="col-sm-11" style="border-bottom:black solid 1px;">
+            <div class="col-sm-3">
+              <h4 style="text-align: center;">10:15 to 11:30</h4>
+            </div>
+            <div class="col-sm-8" style="border-left: black solid 2px;">
+              <button class="sub" style="width: 100%;" onclick=" window.open('','_blank')">Human Development</button>
+            </div>
+          </div>
+
+          <div class="col-sm-11" style="border-bottom:black solid 1px;">
+            <div class="col-sm-3">
+              <h4 style="text-align: center;">12:00 to 1:15</h4>
+            </div>
+            <div class="col-sm-8" style="border-left: black solid 2px;">
+              <button class="sub" style="width: 100%;" onclick=" window.open('','_blank')">Introduction to Robotics</button>
+
+            </div>
+          </div>
+          <div class="col-sm-12" style="border-bottom:black solid 1px;">
+
+            <h2 class="day"> Friday Labs</h2>
+          </div>
+          <div class="col-sm-11" style="border-bottom:black solid 1px;">
+
+            <div class="col-sm-3">
+              <h4 style="text-align: center;">2:00 to 4:00</h4>
+            </div>
+            <div class="col-sm-8" style="border-left: black solid 2px;">
+              <button class="sub" style="width: 100%;" onclick=" window.open('','_blank')">Not Decided </button>
+
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="saturday" id="saturday" style="display: none;">
+
+
+          <script>
+            var d = new Date();
+            var n = d.getDay();
+
+            if (n == 6) {
+              var x = document.getElementById("saturday");
+              x.style.display = "block";
+              Imagev.remove();
+            }
+          </script>
+
+
+          <h2 class="day"> Saturday Labs </h2>
+          <div class="col-sm-11" style="border-bottom:black solid 1px;">
+            <div class="col-sm-3">
+              <h4 style="text-align: center;">8:30 to 12:30</h4>
+            </div>
+            <div class="col-sm-8" style="border-left: black solid 2px;">
+              <button class="sub" style="width: 100%;" onclick=" window.open('','_blank')">Not Decided</button>
+
+            </div>
+          </div>
+        </div>
+
+
+    </div>
+  </div>
+
+  <!-- <div class="footer">
+       Made with love
+  </div> -->
+</body>
+
+</html>
